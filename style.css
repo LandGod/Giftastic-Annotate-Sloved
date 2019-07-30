@@ -1,29 +1,36 @@
+/* set font and background color for entire page */
 body {
   font: 18px arial, sans-serif;
   background: #eee;
 }
 
+/* Keep elements with id animals to 70% the width of thier parent elements */
 #animals {
   width: 70%;
 }
 
+/* Make all elements with class animal-item float to the left of the page and have 10px of padding on all sides */
 .animal-item {
   float: left;
   padding: 10px;
 }
 
+/* Keep user input form on the right side of the page, taking up 30% the width of its parent, with 20px padding on all sides */
 form {
   float: right;
   width: 30%;
   padding: 20px;
 }
 
+/* Make sure all label elements display as blocks, ie: take up their own line and are not inline with anything else */
+/* Give them 10px of margin below and bold font */
 label {
   display: block;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
+/* For text input fields make them 100% of parent wide, 30px high, and have 10px of padding below, with 18px font size */
 input[type="text"] {
   width: 100%;
   height: 30px;
@@ -31,6 +38,9 @@ input[type="text"] {
   font-size: 18px;
 }
 
+/* For buttons and form submit buttons, give them a bluish background color, white text, no border, but rounded corners */
+/* A drop shadow effect, and 10px margins only on the bottom and left of the element, as well as top and bottom padding of 5px */
+/* and left and right padding of 20px */
 button,
 input[type="submit"] {
   padding: 5px 20px;
@@ -44,11 +54,13 @@ input[type="submit"] {
   box-shadow: 2px 2px 3px #bbb;
 }
 
+/* For any button that the user's mouse is hovering over, change the background color to a slightly darker blue */
 button:hover,
 input[type="submit"]:hover {
   background: #334e4d;
 }
 
+/* For buttons given the class 'active', change the background color to still a different shade of blue */
 button.active {
   background: #334e4d;
 }
